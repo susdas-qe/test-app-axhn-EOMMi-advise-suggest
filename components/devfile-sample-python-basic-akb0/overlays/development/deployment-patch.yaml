@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-akb0
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-vroc-tenant/test-app-axhn/devfile-sample-python-basic-akb0@sha256:d9c15d8db75384e5a14d0f3ab9d4f4430350eb171a2f0bb3f770cdf1f00fe583
+        name: my-python
+        resources: {}
+status: {}
